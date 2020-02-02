@@ -1,0 +1,27 @@
+{
+	userData:{
+		id:
+		testName:
+		overallPercentile:
+		scorePhysics:
+		expectedPhysics:
+		scoreBiology:
+		expectedBiology:
+		scoreChemistry:
+		expectedChemistry:
+		avgTimePerQuest:
+		hoursPrep:
+		scoreImprov:
+		timeImporv:
+		correctAns: 
+	}
+	otherData:{
+		avgTotalScore:
+		avgHoursPrep:
+		avgPhysics:
+		avgChem:
+		avgBio:
+		avgTimePerQuest:
+		avgCorrectAns:
+	}
+}

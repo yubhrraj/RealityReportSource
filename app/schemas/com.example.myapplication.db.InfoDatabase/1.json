@@ -1,0 +1,57 @@
+{
+  "formatVersion": 1,
+  "database": {
+    "version": 1,
+    "identityHash": "de2db99e4a7b535b4dc3356e233135a8",
+    "entities": [
+      {
+        "tableName": "data",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`test_id` INTEGER NOT NULL, `score` INTEGER NOT NULL, `exp_score` INTEGER NOT NULL, `hours_studied` INTEGER NOT NULL, `avg_time_p_ques` INTEGER NOT NULL, PRIMARY KEY(`test_id`))",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "test_id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "score",
+            "columnName": "score",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "expScore",
+            "columnName": "exp_score",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "hoursStudied",
+            "columnName": "hours_studied",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "avgTimePQuest",
+            "columnName": "avg_time_p_ques",
+            "affinity": "INTEGER",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "test_id"
+          ],
+          "autoGenerate": false
+        },
+        "indices": [],
+        "foreignKeys": []
+      }
+    ],
+    "setupQueries": [
+      "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, \"de2db99e4a7b535b4dc3356e233135a8\")"
+    ]
+  }
+}

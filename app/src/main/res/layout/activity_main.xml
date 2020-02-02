@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".views.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="5dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:orientation="horizontal"
+            android:background="@drawable/car_view_background"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/testName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text= ""
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:textSize="25sp"
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/percentile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text= ""
+                android:layout_weight="1"
+                android:textSize="20sp"
+                android:gravity="right"
+                android:layout_marginRight="5dp"/>
+
+        </LinearLayout>
+
+
+        <com.anychart.AnyChartView
+            android:layout_marginTop="25dp"
+            android:id="@+id/barChart"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"/>
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:id="@+id/detailCardView"
+
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:background="@drawable/car_view_background"
+                android:padding="10dp"
+                android:paddingTop="25dp"
+                android:elevation="3dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="7dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="15sp"
+                    android:id="@+id/totalScoreView"
+                    android:paddingTop="5dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="15sp"
+                    android:id="@+id/averageQuestionTimeView"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="15sp"
+                    android:id="@+id/totalSyllabusDoneView"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="15sp"
+                    android:id="@+id/timeImprovView"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="15sp"
+                    android:id="@+id/scoreImrpovView"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="15sp"
+                    android:id="@+id/prepHourView"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="15sp"
+                    android:id="@+id/avgPrepHourView"/>
+
+
+
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+        <com.anychart.AnyChartView
+            android:layout_marginTop="25dp"
+            android:id="@+id/radarChart"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_marginBottom="8dp"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/detaledReportButton"
+            android:text="Check Detailed Report"
+            android:layout_margin="5dp"/>
+
+
+        <Button
+            android:id="@+id/historyButton"
+            android:layout_width="51dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/round_button"
+            android:text="History"
+            android:layout_gravity="center"
+            android:textSize="10sp"
+            android:elevation="3dp"/>
+
+    </LinearLayout>
+
+</ScrollView>
